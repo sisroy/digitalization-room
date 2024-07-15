@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Allocation Results</title>
+</head>
+<body>
+    <h1>Room Allocation Results</h1>
+    <table border="1">
+        <tr>
+            <th>Group ID</th>
+            <th>Hostel Name</th>
+            <th>Room Number</th>
+            <th>Members Allocated</th>
+        </tr>
+        {% for alloc in allocation %}
+        <tr>
+            <td>{{ alloc['Group ID'] }}</td>
+            <td>{{ alloc['Hostel Name'] }}</td>
+            <td>{{ alloc['Room Number'] }}</td>
+            <td>{{ alloc['Members Allocated'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
